@@ -1,0 +1,12 @@
+                                          
+ h1 {                                                                                 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;  
+    color: rgba(12, 102, 64, 0.856);                                                              
+}                                                                                    
+
+ body{
+     margin: 20px; 
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 15px;
+ }

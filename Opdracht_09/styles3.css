@@ -1,0 +1,55 @@
+                                          
+ h1 {                                                                                 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;  
+    color: rgba(12, 102, 64, 0.856);                                                              
+    text-align: center;
+    
+}                                                                                    
+
+
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;  
+    color: black;                                                             
+    text-align: left;
+}
+
+
+body{
+    margin: 20px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    
+}
+
+
+.blogpost {
+      width: 300px; border: 1px solid black; 
+    }
+
+
+.container {
+        display: flex;
+        flex-wrap: wrap;
+   }
+
+  
+
+.red{
+   order: 3; 
+   background:salmon;
+}
+
+
+.groter {
+    flex-grow: 1;
+}
+
+
+.yellow {
+    height: 75px;
+    align-self: center;
+    background-color: yellow;
+}
+    
