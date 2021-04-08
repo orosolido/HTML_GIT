@@ -1,0 +1,203 @@
+
+html{
+    margin-top: 20px;
+}
+
+body {   
+    /*background-color: rgb(236, 227, 226);*/
+    background-color: rgb(241, 241, 241);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+nav {
+    font-family: 'Alata';
+    text-align: right;
+    padding-right: 20px;
+}
+
+h1 {
+    font-family: Merriweather, serif;
+    font-size: 50px;
+    font: bold;
+    color:rgb(119, 119, 119);
+}
+
+h2 {
+    font-family: Merriweather, serif;
+    font-size: 26px;
+    color:rgb(71, 71, 71); 
+}
+
+h3 {
+    font-family: Merriweather, serif;
+    font-size: 20px;
+    color:indianred;
+}
+
+img {
+    width: 100%;
+  }
+
+
+/* FORM OPMAAK */
+form{
+    font-family: 'Lexend Deca';
+}   
+
+input,
+select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    
+    font-family: 'Lexend Deca';
+    font-size: 13px;
+  }
+
+button {
+    width: 75px;
+    height: 25px;
+    
+    padding:5px 15px; 
+    background:rgb(100, 141, 127); 
+    color: white;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 2px; 
+    margin-left: 2px;
+}
+
+button:hover {
+    background:rgb(89, 126, 113);
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    margin-top: -5px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-family: 'Lexend Deca';
+    font-size: 13px;
+}
+
+
+/* CLASSES */
+
+.achtergrond{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color:rgb(255, 255, 255);
+}
+
+.margin1{
+    padding-left: 20px;
+}
+
+.margin2{
+    padding-left: 20px;
+    margin-top: -10px;
+}
+
+.margin_tabel{
+    margin-top: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(13, 148, 96);
+    font-weight: 600;
+    font-size: 1 rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.link:hover {
+    color: #ce3a20;
+}
+
+
+.small_font{
+    font-size: 10px;
+    padding-left: -5px;
+}
+
+.alle_teksten_small {     
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-style: oblique;
+    color: #000000;
+    line-height: 1.25em;
+    word-spacing: 0.5em;
+}
+
+.alle_teksten_ob {     
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: oblique;
+    color: #000000;
+    line-height: 1.25em;
+    word-spacing: 0.5em;
+}
+
+.alle_teksten_norm {     
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.25em;
+    word-spacing: 0.2em;
+}
+
+.form_bord {
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-right: 20px;
+   }
+
+
+/* STYLING MOBIEL */
+@media (max-width: 768px) {
+    
+    nav {
+        font-size: 140%;
+    }
+
+    .alle_teksten_ob,
+    .alle_teksten_norm{
+        font-size: 140%;
+    }
+
+}
+
+/* STYLING TABLET */
+@media (min-width: 768px) and (max-width: 1024px)  {
+    
+    h1{
+        color:snow;
+    }
+
+    body{
+        background-color: #000000;
+    }
+    
+    .alle_teksten_small,
+    .alle_teksten_ob,
+    .alle_teksten_norm{
+        color: rgb(219, 219, 219);
+    }
+
+
+
+}
