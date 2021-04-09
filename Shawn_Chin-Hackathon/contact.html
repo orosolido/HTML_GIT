@@ -26,9 +26,9 @@
         <main>
             <h2>.Vragen of opmerkingen?</h2>
 
-            <p class="alle_teksten_norm">Beste bezoeker. Heb je een vraag/opmerking? Stuur mij dan gerust een
-                bericht!
-                Vul de velden hieronder in en druk als laats op [send]
+            <p class="alle_teksten_norm">Beste bezoeker. Heb je een vraag/opmerking? <br>
+                Stuur mij dan gerust een bericht!
+                Vul de velden hieronder in en druk als laatst op [send]
             </p>
 
             <img
@@ -37,11 +37,12 @@
             <p></p>
 
             <form class="form_bord margin1" name="contact-form" method="POST" data-netlify="true">
+                <p>
                 <table style="width:100%">
                     <tr>
                         <td>
                             <label for="voornaam">Naam*</label><br>
-                            <input class="margin_tabel" type="text" name="voornaam" id="voornaam" />
+                            <input type="text" name="voornaam" id="voornaam" />
                         </td>
                         <td>
                             <label for="achternaam"></label><br>
@@ -54,10 +55,10 @@
 
                     </tr>
                 </table>
-
+                </p>
 
                 <p>
-                    <label name="email">Email: (email@domein.etc)</label><br>
+                    <label name="email">Email* (email@domein.etc)</label><br>
                     <input type="email" name="email" id="email" />
                 </p>
 
@@ -92,9 +93,9 @@
 
 
                 <p>
-                    <label for="bericht">Bericht</label>
+                    <label for="bericht">Bericht*</label>
                 <p>
-                    <textarea name="message" id="bericht" rows="10" cols="50"></textarea>
+                    <textarea name="message" id="bericht" rows="25" cols="50"></textarea>
                 </p>
                 <p>
                     <button type="reset">Reset</button>
