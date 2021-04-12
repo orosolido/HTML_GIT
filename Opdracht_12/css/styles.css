@@ -1,0 +1,312 @@
+
+html{
+    margin-top: 20px;
+}
+
+body {   
+    /*background-color: rgb(236, 227, 226);*/
+    background-color: rgb(241, 241, 241);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+nav {
+    font-family: 'Alata';
+    text-align: right;
+    padding-right: 20px;
+}
+
+h1 {
+    font-family: Merriweather, serif;
+    font-size: 50px;
+    font: bold;
+    color:rgb(119, 119, 119);
+}
+
+h2 {
+    font-family: Merriweather, serif;
+    font-size: 30px;
+    color:rgb(71, 71, 71); 
+}
+
+h3 {
+    font-family: Merriweather, serif;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+}
+
+img {
+    width: 100%;
+  }
+
+
+/* FORM OPMAAK */
+form{
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+}   
+
+input,
+select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    
+    font-family: 'Lexend Deca';
+    /*font-size: 13px;*/
+    font-size: 20px;
+  }
+
+button {
+    width: 48%;
+    height: 45px;
+    
+    background:whitesmoke;
+    color:black;
+    border: 0.5px solid red;
+    
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    
+    /* rounded-left */
+    border-radius: 5px 0px 0px 5px;
+    /* rounded-right */
+    border-radius: 0px 5px 5px 0px;
+    
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+button:hover {
+    background:rgb(187, 231, 169);
+}
+
+textarea {
+    width: 100%;
+    height: 450px;
+    margin-top: -5px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+}
+
+
+/* CLASSES */
+
+.border1{
+    border: 2px solid black;
+}
+
+
+.margin1{
+    padding-left: 20px;
+}
+
+
+.small_font{
+    font-size: 15px;
+    padding-left: -5px;
+}
+
+.alle_teksten_small {     
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: oblique;
+    color: #000000;
+    line-height: 1.25em;
+    word-spacing: 0.5em;
+}
+
+
+.alle_teksten_ob {     
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-style: oblique;
+    color: #000000;
+    line-height: 1.25em;
+    word-spacing: 0.5em;
+}
+
+.alle_teksten_norm {     
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: #000000;
+    line-height: 1.25em;
+    word-spacing: 0.2em;
+}
+
+.form_bord {
+    width: 500px;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 6px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+   }
+
+
+/* GRID */
+
+.achtergrond{
+    width: 400px;
+    background-color: white;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 7px;    
+    
+    padding: 1px;
+}
+
+.container {
+    font-family: 'Open Sans';    
+    margin-top: 0px;
+    width: 400px;
+    
+    display: grid;
+    grid-gap: 1px;
+
+    grid-template-columns: 0px 1fr 50px 100px 0px;
+    grid-template-rows: 50px 50px 25px 50px;
+    
+    grid-template-areas: 
+    ". test1a test2a test3a ."
+    ". test1b test2b test3a ."
+    ". test3b test3b test3b ."
+    ". test4a test4a test4a ."
+    ". test4b test4b test4b .";
+    
+    text-align: left;  
+
+}
+
+        .container-section1a{
+            /*background-color: lightblue;*/
+            grid-area: test1a;
+            padding-top: 12px;
+            padding-left: 10px;
+            margin-top: 5px;
+            font-size: 22px;
+            font-weight: 1000;
+        }
+
+        .container-section1b{
+            /*background-color: lightpink;*/
+            grid-area: test1b;
+            font-size: 18px;
+            padding-left: 10px;
+            color: grey;
+        }
+
+
+        .container-section2a{    
+            grid-area: test2a;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+
+        .container-section2b{
+            grid-area: test2b;
+            font-size: 20px;
+        }
+
+        .container-section3a{
+            /*background-color:rgb(0, 153, 255);*/
+            grid-area: test3a;
+            margin-top: 5px;
+            
+        }
+
+        .container-section3b{
+            grid-area: test3b;  
+            font-size: 20px;
+            padding-left: 5px;
+        }
+
+        .container-section4a{
+            /*background-color:rgb(0, 153, 255);*/
+            grid-area: test4a;
+            font-size: 18px;
+            font-weight: 500;
+            padding-left: 10px;
+            color: rgb(117, 104, 104);
+            
+        }
+
+        .container-section4b{
+            background-color:rgb(0, 153, 255);
+            grid-area: test4b;  
+            font-size: 17.5px;
+            /*border-bottom: 1px solid black;*/
+            border-bottom: 0.1px solid rgb(226, 226, 226);
+            margin-top: 15px;
+        } 
+
+
+.container-small {
+    font-family: 'Lexend Deca';
+    background-color: white;    
+    
+        
+    display: grid;
+    grid-gap: 0px;
+
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: 55px ;
+    
+    grid-template-areas: 
+    ". approve1 decline1 .";
+    
+    
+    text-align: center;  
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+        .container-confirm_y{
+            grid-area: approve1;            
+            background-color:rgb(255, 255, 255);
+            
+            margin-top: 5px;
+            padding-top: 7.5px;
+            
+            font-size: 20px;
+            font-weight: 400;
+            
+            
+            border-radius: 5px 0px 0px 5px;
+            border: 2px solid rgb(38, 201, 38, 0.904);
+            border-right: 0px;
+
+            color: rgb(38, 201, 38, 0.904);
+        }
+
+        .container-confirm_n{
+            grid-area: decline1;
+            background-color: rgb(255, 255, 255); 
+
+            
+            margin-top: 5px;
+            padding-top: 7.5px; 
+            font-size: 20px;
+            font-weight: 400;
+            
+            border-radius: 0px 7px 7px 0px;
+            border: 2px  solid red;
+            color: red;;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
