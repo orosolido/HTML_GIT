@@ -1,11 +1,10 @@
 
 /* ELEMENTS */
-html{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-}
-
 body{
+    
+    font-family: 'Alata';
+    font-size: 20px;
+
     color: white;
     margin: 10px;
 }
@@ -17,7 +16,7 @@ div{
 /* CLASSES */
 
 .container {
-    height: 800px;
+    height: 1000px;
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(1, 1fr);

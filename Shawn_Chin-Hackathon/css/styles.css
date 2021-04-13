@@ -31,7 +31,7 @@ h1 {
 
 h2 {
     font-family: Merriweather, serif;
-    font-size: 40px;
+    font-size: 30px;
     /*color:indianred; */
     color:rgb(71, 71, 71); 
 }
@@ -41,7 +41,6 @@ h3 {
     font-size: 30px;
     color:indianred;
 }
-
 
 
 img {
@@ -67,7 +66,7 @@ img {
 
 .nav-container{
     /*border: 2px dotted black;*/
-    font-size: 45px;
+    font-size: 30px;
     padding-right:10%;
     text-align: center;
 }
@@ -106,7 +105,7 @@ img {
 
 .alle_teksten_small {     
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+    font-size: 20px;
     font-style: oblique;
     color: #000000;
     line-height: 1.25em;
@@ -116,7 +115,7 @@ img {
 
 .alle_teksten_ob {     
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 35px;
+    font-size: 25px;
     font-style: oblique;
     color: #000000;
     line-height: 1.25em;
@@ -125,7 +124,7 @@ img {
 
 .alle_teksten_norm {     
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 35px;
+    font-size: 25px;
     color: #000000;
     line-height: 1.25em;
     word-spacing: 0.2em;
@@ -229,7 +228,8 @@ margin-top: 200px;
 
 /* STYLING TABLET */
 /*@media screen and (min-width: 600px) and (max-width: 1024px)  {*/
-@media (min-width: 700px) and (max-width: 1280px){    
+@media (min-width: 700px) and (max-width: 1280px){
+/*@media (min-width: 700px){ */
     body{
         background-color: #000000;
     }
