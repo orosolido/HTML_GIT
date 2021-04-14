@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Eindopdracht - Hackathon: maak eigen website met HTML/CSS (Shawn) -->
+    <title> .Fotografie > Contact </title>
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" type="text/css" href="styles_con.css">
+
+</head>
+
+<body>
+
+    <div class="margin1">
+        <header>
+            <h1>.Contact</h1>
+            <nav>
+                <a class="link" href="index.html" alt="link not working">Terug naar hoofdpagina</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <h2>.Vragen of opmerkingen?</h2>
+
+            <p class="alle_teksten_norm">Beste bezoeker. Heb je een vraag/opmerking? Stuur mij dan gerust een
+                bericht!
+                Vul de velden hieronder in en druk als laats op [send]
+            </p>
+
+            <img
+                src="https://cdn.shopify.com/s/files/1/1417/3230/products/KD001965MountainSunrise20x60copy_1024x1024.jpg?v=1610497311">
+
+            <p></p>
+
+            <form class="form_bord margin1" name="contact-form" method="POST" data-netlify="true">
+                <table style="width:100%">
+                    <tr>
+                        <td>
+                            <label for="voornaam">Naam*</label><br>
+                            <input class="margin_tabel" type="text" name="voornaam" id="voornaam" />
+                        </td>
+                        <td>
+                            <label for="achternaam"></label><br>
+                            <input class="margin_tabel" type="text" name="achternaam" id="achternaam" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="small_font">voornaam</td>
+                        <td class="small_font">achternaam</td>
+
+                    </tr>
+                </table>
+
+
+                <p>
+                    <label name="email">Email: (email@domein.etc)</label><br>
+                    <input type="email" name="email" id="email" />
+                </p>
+
+                <p>
+                    <label for="phone">Telefoonnr</label><br>
+                    <input type="tel" name="phone" id="phone" />
+                </p>
+
+
+
+                <p>
+                    <label for="birthdate">Geboortedatum</label><br>
+                    <input type="date" name="birthdate" id="birthdate" />
+                </p>
+
+                <p>
+                    <label for="website">Link van je website (www.example.com) </label><br>
+                    <input type="url" name="website" id="website" />
+                </p>
+
+                <p>
+                    <label for="vraag">Hoe heb je deze website gevonden?</label>
+                    <select name="vraag" id="vraag">
+                        <option value="seachengine">..via een zoekmachine (bv. google/bing)</option>
+                        <option value="friend">..via een vriend of vriendin</option>
+                        <option value="andere_foto_web">..via een andere foto site</option>
+                        <option value="anders">.. anders</option>
+                    </select>
+
+                </p>
+
+
+
+                <p>
+                    <label for="bericht">Bericht</label>
+                <p>
+                    <textarea name="message" id="bericht" rows="10" cols="50"></textarea>
+                </p>
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
+
+        </main>
+
+        <br>
+        <br>
+
+        <footer>
+            <a class="link" href="index.html" alt="link not working">Terug naar hoofdpagina</a>
+        </footer>
+        <br>
+        <p></p>
+
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,99 @@
+
+html{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+body {   
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+}
+
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    /*border: 1px dotted;*/
+}
+
+
+h1{
+    font-family: Merriweather, serif;
+    font-size: 50px;
+    font: bold;
+    color:rgb(119, 119, 119);
+}
+
+input{
+    width: 200px;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 4px;
+
+    font-size: 20px;
+    color:mediumseagreen;
+  }
+
+
+input:focus {
+    border: 3px dashed rgb(0, 247, 255);
+    border-radius: 4px;
+}
+
+
+.nav-container{
+    background-color: rgb(29, 0, 136);
+    color: rgb(255, 255, 255);
+    font-size: 25px;    
+}
+
+
+.nav-listitem {  
+    /*padding-left: 50px;*/
+    padding-right: 100px;
+    padding-bottom: 5px;
+}
+
+.nav-listitem2 {  
+    padding-left: 100px;
+}
+
+
+.nav-listitem:hover {
+    background-color: rgb(247, 124, 10);
+}
+
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.75em;
+    font-family: 'Lexend Deca', sans-serif;
+    color: whitesmoke;
+}
+
+.nav-link:hover {
+    color: lightskyblue;
+}
+
+.currentPage{
+    background-color: rgb(151, 140, 252);
+}
+
+#red:active {
+    color: red;
+    font-style: oblique;
+}
+
+#yellow:visited{
+    color: rgb(255, 174, 0);
+}
+
+.margin1{
+    padding-left: 20px;
+}
+
