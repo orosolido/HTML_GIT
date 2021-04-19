@@ -8,12 +8,18 @@ body {
     background-color: rgb(241, 241, 241);
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 nav {
-    font-family: 'Alata';
     text-align: right;
-    padding-right: 20px;
+    padding-right: 5px;
+}
+
+nav ul {
+    margin-bottom: 10px;
+    /*border: 2px solid salmon;*/
 }
 
 h1 {
@@ -43,7 +49,7 @@ img {
 /* FORM OPMAAK */
 form{
     font-family: 'Lexend Deca';
-    font-size: 20px;
+    font-size: 17px;
 }   
 
 input,
@@ -58,14 +64,10 @@ select {
     resize: none;
     
     font-family: 'Lexend Deca';
-    /*font-size: 13px;*/
-    font-size: 20px;
+    font-size: 15px;
   }
 
 button {
-    /*width: 75px;
-    height: 25px;*/
-
     width: 100px;
     height: 35px;
     
@@ -86,7 +88,7 @@ button:hover {
 
 textarea {
     width: 100%;
-    height: 450px;
+    height: 350px;
     margin-top: -5px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -95,9 +97,8 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
     font-family: 'Lexend Deca';
-    font-size: 20px;
+    font-size: 16px;
 }
-
 
 /* CLASSES */
 
@@ -124,14 +125,15 @@ textarea {
     text-decoration: none;
     color: rgb(13, 148, 96);
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 17px;
+    /*font-family: 'Alata';*/
     font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
 }
 
 .link:hover {
     color: #ce3a20;
 }
-
 
 .small_font{
     font-size: 15px;
@@ -150,7 +152,7 @@ textarea {
 
 .alle_teksten_ob {     
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+    font-size: 22px;
     font-style: oblique;
     color: #000000;
     line-height: 1.25em;
@@ -159,10 +161,10 @@ textarea {
 
 .alle_teksten_norm {     
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+    font-size: 22px;
     color: #000000;
     line-height: 1.25em;
-    word-spacing: 0.2em;
+    word-spacing: 0.15em;
 }
 
 .form_bord {
@@ -173,14 +175,62 @@ textarea {
     padding-right: 20px;
    }
 
+/* GRID */ 
+
+.container-small {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(20, 20, 20);    
+           
+    display: grid;
+    grid-gap: 30px;
+    
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: 1fr 1fr 20px;
+    grid-template-areas: 
+    ". part01 part02 ."
+    ". part03 part04 ."
+    ". part05 part05 .";
+
+        
+    border: 0.1px dotted black;
+    border-radius: 4px;
+
+    text-align: center;  
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+    .part01{
+        grid-area: part01;
+    }
+
+    .part02{
+        grid-area: part02;
+    }
+
+    .part03{
+        grid-area: part03;
+    }
+
+    .part04{
+        grid-area: part04;
+    }
+
+    .part05{
+        grid-area: part05;
+        color: white;
+        text-align: center;
+    }
 
 
 /* MEDIA QUERY -- TABLET */
-@media (min-width: 700px) and (max-width: 1280px){
-/*@media (min-width: 700px){      */
-    
+@media (min-width: 400px) and (max-width: 1280px){
+
         body{
             background-color: #000000;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         
         nav ul li {
@@ -198,8 +248,7 @@ textarea {
 
         button {
             font-size: 15px;
-            }
-
+        }
 
         .alle_teksten_small,
         .alle_teksten_ob,
@@ -212,17 +261,22 @@ textarea {
             font-size: 23px;
         }
 
-
         .link {
         color: rgb(211, 164, 12);
-        font-size: 19px;
+        font-size: 17px;        
         }
+        
 
 }
 
 
-   @media (min-width: 1280px) {
-    
+ @media (min-width: 1280px) {
+
+    body{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     nav ul li {
         font-size: 10px;
     }
@@ -256,5 +310,22 @@ textarea {
     .alle_teksten_norm{
         font-size: 23px;
     }
+
+    /* GRID */
+
+    .container-small {
+        grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+        grid-template-rows: 1fr 20px;
+        grid-template-areas: 
+        ". part01 part02 part04 part03 ."
+        ". part05 part05 part05 part05 .";
+
+    }
+
+    .part05{
+        text-align: right;
+    }
+    
+    
 
 }

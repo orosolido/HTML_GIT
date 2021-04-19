@@ -1,38 +1,38 @@
 
 html{
     margin-top: 20px;
-}
 
-main {
-    /*border: 1px solid black;*/
-    padding: 0px;
 }
 
 body {   
-    /*background-color: rgb(236, 227, 226);*/
     background-color: rgb(241, 241, 241);
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     font-size: 15px;
-    
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+nav ul {
+    margin-bottom: 10px;
+    padding: 0;
+    /*border: 2px solid salmon;*/
 }
 
 nav ul li{
     display: inline-block;
-    font-family: 'Alata';
-    /*border: 1px dotted;*/
+    /*font-family: 'Alata';*/
+    font-size: 21px;
 }
 
 h1 {
     font-family: Merriweather, serif;
     font-size: 50px;
-    font: bold;
     color:rgb(119, 119, 119);
 }
 
 h2 {
     font-family: Merriweather, serif;
     font-size: 30px;
-    /*color:indianred; */
     color:rgb(71, 71, 71); 
 }
 
@@ -42,13 +42,17 @@ h3 {
     color:indianred;
 }
 
+h4 {
+    font-family: Merriweather, serif;
+    font-size: 22px;
+    color:indianred;
+}
 
 img {
     width: 100%;
   }
 
 .img-smaller {
- 
  padding-right: 20px;
 }
 
@@ -57,17 +61,20 @@ img {
     height: 150px;
     object-fit: cover;
     border-radius: 80%;
-    border: 2px dotted black
+    border: 2px solid black
 }
 
 .img-rond:hover {
-    border: 2px solid red;
+    border: 2px dotted rgb(13, 148, 96);
 }
 
+.over-flow{
+    overflow: hidden;
+}
+
+
 .nav-container{
-    /*border: 2px dotted black;*/
-    font-size: 30px;
-    padding-right:10%;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -86,6 +93,11 @@ img {
     margin-top: -10px;
 }
 
+.margin3{
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
 .nav-listitem {  
     padding-left: 5px;
     padding-right: 5px;
@@ -100,7 +112,7 @@ img {
 }
 
 .nav-link:hover {
-    color: #ce3a20;
+    color: #208ece;
 }
 
 .alle_teksten_small {     
@@ -112,142 +124,93 @@ img {
     word-spacing: 0.5em;
 }
 
-
 .alle_teksten_ob {     
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+    font-size: 22px;
     font-style: oblique;
     color: #000000;
     line-height: 1.25em;
-    word-spacing: 0.5em;
+    word-spacing: 0.2em;
+    word-wrap: break-word;
 }
 
 .alle_teksten_norm {     
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+    font-size: 22px;
     color: #000000;
     line-height: 1.25em;
-    word-spacing: 0.2em;
+    word-spacing: 0.15em;
+    word-wrap: break-word;
 }
-
-/*CSS GRID CONTAINER*/
-
-.container {
-    background-color: white;    
-    margin-top: 0px;
-    width: 100%;
-        
-    display: grid;
-    grid-gap: 5px;
-
-    grid-template-columns: 20px 1fr 1fr 1fr 20px;
-    grid-template-rows: auto 50px auto;
-    
-    grid-template-areas: 
-    ". test1a test2a test3a ."
-    ". test1b test2b test3b ."
-    ". test1c test2c test3c .";
-    
-    text-align: center;
-}
-
-.container-text{
-    color: white;
-    font-size: 15px;
-    font-weight: 600;   
-}
-
-    .container-section1a{
-        background-color:white;
-        grid-area: test1a;
-        margin-top: 5px;
-    }
-
-    .container-section1b{
-        background-color: black; 
-        grid-area: test1b;
-        margin-top: 20px;
-        font-size: 20px;
-    }
-
-    .container-section1c{
-        background-color:white; 
-        grid-area: test1c;
-        margin-top: 20px;
-    }
-
-    .container-section2a{
-        background-color:white;
-        grid-area: test2a;
-        margin-top: 5px;
-    }
-
-    .container-section2b{
-        background-color: black; 
-        grid-area: test2b;
-        margin-top: 20px;
-        font-size: 20px;
-    }
-
-    .container-section2c{
-        background-color:white;
-        grid-area: test2c;
-        margin-top: 20px;
-    }
-
-    .container-section3a{
-        background-color:white;
-        grid-area: test3a;
-        margin-top: 5px;
-    }
-
-    .container-section3b{
-        background-color: black; 
-        grid-area: test3b;
-        margin-top: 20px;
-        font-size: 20px;
-    }
-
-    .container-section3c{
-        background-color: white; 
-        grid-area: test3c;
-        margin-top: 20px;
-    }
-
 
 .footer{
-background-color:rgb(66, 128, 104);
-margin: 0 auto;
-text-align: center;
-width: 100%;
-height: 40px;
-padding-top: 2%;
-margin-top: 200px;
+    background-color:rgb(66, 128, 104);
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding-top: 2%;
+    margin-top: 200px;
+    }
+
+
+/* FLEXBOX */
+
+.flex-container{
+  display: flex;
+  /*border: 1px dashed orange;*/
+  flex-direction: column;
+  text-align: center;
 }
+
+.box-1{
+flex: 1;
+min-width: 225px;
+}
+
+.box-2{
+flex: 1;
+min-width: 225px;
+
+}
+
+.box-3{ 
+ flex: 1;
+ min-width: 225px;
+}
+
+
 
 
 /* STYLING TABLET */
-/*@media screen and (min-width: 600px) and (max-width: 1024px)  {*/
-@media (min-width: 700px) and (max-width: 1280px){
-/*@media (min-width: 700px){ */
+
+@media (min-width: 400px) and (max-width: 1280px){
+
     body{
         background-color: #000000;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
     nav ul li {
-        font-size: 25px;
+        font-size: 23px;
+        padding-left: 20px;
     }
 
     h2{
     font-size: 30px;
     }
 
-
     h3{
         color: rgb(255, 174, 0);
     }
 
-
+    h4{
+        color: rgb(255, 174, 0);
+        font-size: 23px;
+        letter-spacing: 0.05em;
+    }
+    
     .alle_teksten_small,
     .alle_teksten_ob,
     .alle_teksten_norm{
@@ -259,86 +222,47 @@ margin-top: 200px;
         font-size: 23px;
     }
 
-
     .nav-link {
     color: rgb(173, 173, 173);
     }
 
     .nav-container{
-        text-align: right;
-        padding-right: 3px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
     }
 
     .achtergrond{
         background-color: rgb(0, 0, 0);
-        border: 1px solid grey;
+        /*border: 1px solid grey;*/
+        border: 1px dashed orange;
     }
 
-    .container {
-        background-color: black;
+
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .img-rond:hover {
+        border: 2px dotted  white;
     }
     
-    .container-section1a{
-        background-color:black;
-        grid-area: test1a;
-        margin-top: 5px;
-    }
-
-    .container-section1b{
-        background-color:black;
-        grid-area: test1b;
-        margin-top: 20px;
-    }
-
-    .container-section1c{
-        background-color:black;
-        grid-area: test1c;
-        margin-top: 20px;
-    }
-
-    .container-section2a{
-        background-color:black;
-        grid-area: test2a;
-        margin-top: 5px;
-    }
-
-    .container-section2b{
-        background-color:black;
-        grid-area: test2b;
-        margin-top: 20px;
-    }
-
-    .container-section2c{
-        background-color:black;
-        grid-area: test2c;
-        margin-top: 20px;
-    }
-
-    .container-section3a{
-        background-color:black;
-        grid-area: test3a;
-        margin-top: 5px;
-    }
-
-    .container-section3b{
-        background-color: black; *
-        grid-area: test3b;
-        margin-top: 20px;
-    }
-
-    .container-section3c{
-        background-color:black;
-        grid-area: test3c;
-        margin-top: 20px;
-    }
-
 }
 
 
 @media screen and (min-width: 1280px) {
-    
+
+    body{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     nav ul li {
         font-size: 25px;
+        padding-left: 20px;
     }
 
     h2{
@@ -346,8 +270,16 @@ margin-top: 200px;
         }
 
     .nav-container{
-        text-align: right;
-        padding-right: 3px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
     }
 
     .alle_teksten_ob,
