@@ -1,0 +1,44 @@
+/*
+
+Opdracht:
+Zorg ervoor dat Batman met zijn logo the Joker, 
+die springt van dak tot dak, volledig bedekt.
+
+Check de codepen: https://codepen.io/robertlangereis/pen/eYYgYXJ
+
+Enkele voorwaarden voor het juiste resultaat
+
+Jullie mogen enkel aanpassingen maken met de CSS tab van Codepen 
+(dus geen HTML veranderingen)
+
+Binnen de CSS mag je enkel de Transform property van 
+CSS gebruiken om het resultaat te behalen. En dit alleen op de Batman class
+
+Tip: Maak gebruik van de Rotate value om het horizontale logo van 
+Batman verticaal te maken zodat The Joker bedekt wordt
+*/
+
+.gotham{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.batman{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-duration: 1s;
+  transition-property: all;
+  transition-delay: 0,5;
+  transition-timing-function: ease-in;
+}
+
+.joker{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.batman:active{
+  transform: translate(500px, 300px) rotate(630deg) scale(5.5);  
+}

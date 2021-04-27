@@ -1,0 +1,20 @@
+
+/* VARIABELEN */
+
+$padding_default : 20px !default;
+$background-color--about: #97d279;
+$background-color--green: #c0eea9;
+$background-color--black: #000;
+$shadow_black: #000;
+
+$fontfam: "Raleway", sans-serif;
+$weight: 300;
+$font-size: 20px;
+
+/* [ MIXINS ] ---------------------------------------*/
+
+@mixin same_fonts ($font-size) {
+    font-family: $fontfam;
+    font-weight: $weight;
+    font-size: $font-size;
+}
