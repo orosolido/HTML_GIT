@@ -179,7 +179,8 @@ textarea {
 
 .container-small {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(20, 20, 20);    
+    /* background-color: rgb(20, 20, 20);     */
+    background-color: rgb(255, 0, 0);  
            
     display: grid;
     grid-gap: 30px;
@@ -190,7 +191,6 @@ textarea {
     ". part01 part02 ."
     ". part03 part04 ."
     ". part05 part05 .";
-
         
     border: 0.1px dotted black;
     border-radius: 4px;

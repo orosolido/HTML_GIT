@@ -1,0 +1,328 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  margin-top: 20px;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: #c3cfe2;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 50px;
+  font: bold;
+  color: #777777;
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  color: #474747;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 35px;
+  color: white;
+  background-color: #686de0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #e0e0e0;
+  background-color: #686de0;
+  padding: 10px;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+.over-flow {
+  overflow-x: hidden;
+}
+
+.height {
+  height: 250px;
+}
+
+.height2 {
+  height: 50px;
+}
+
+.margin {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.h3 {
+  padding-top: 75px;
+}
+
+/* -------- PART 01 - TESTIMONIAL ------------ */
+.card_container {
+  background-color: white;
+  padding-top: 20px;
+  width: 400px;
+  min-width: 356px;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 30px grey;
+          box-shadow: 10px 10px 30px grey;
+}
+
+.card_text {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+  color: #4e4e4e;
+  letter-spacing: 0.5px;
+  line-height: 32px;
+  word-wrap: break-word;
+  margin-top: 5px;
+  margin-bottom: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.card_img {
+  width: 110px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 80%;
+  border: 5px solid white;
+}
+
+.card_bottom {
+  height: 40px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #686de0;
+}
+
+/* -------- PART 02 - PORTFOLIO ------------ */
+.pf_grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+  -ms-grid-columns: 1px 1fr 1px;
+      grid-template-columns: 1px 1fr 1px;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: ". part01 ." ". part02 ." ". part03 ." ". part04 ." ". part05 ." ". part06 ." ". part06.";
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pf_grid_01 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: part01;
+}
+
+.pf_grid_02 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: part02;
+}
+
+.pf_grid_03 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: part03;
+}
+
+.pf_grid_04 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: part04;
+}
+
+.pf_grid_05 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: part05;
+}
+
+.pf_grid_06 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: part06;
+}
+
+.pf_container {
+  position: relative;
+  background: #1a1a1a;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pf_container:hover .pf_picture {
+  opacity: 20%;
+}
+
+.pf_container:hover .pf_button {
+  opacity: 100%;
+}
+
+.pf_picture {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform-origin: opacity;
+          transform-origin: opacity;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+.pf_button {
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  -webkit-transition: 0.1s all ease-in-out .2s;
+  transition: 0.1s all ease-in-out .2s;
+  opacity: 0;
+}
+
+.pf_button_style {
+  font-family: "Open Sans";
+  width: 125px;
+  height: 25px;
+  padding-top: 1px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #a0a0a0;
+}
+
+/* -------- PART 03 - SOCIAL MEDIA ------------ */
+.sidenav_link {
+  position: fixed;
+  width: 230px;
+  right: -185px;
+  font-family: 'Alata';
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5%;
+  margin-right: 5px;
+  padding: 12px;
+  line-height: 21px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.sidenav_link:hover {
+  right: -20px;
+  color: white;
+}
+
+.sidenav_img {
+  height: 20px;
+  width: 40px;
+  padding-left: 1px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+.social-media_blog {
+  bottom: 180px;
+  background-color: #e17b77;
+}
+
+.social-media_facebook {
+  bottom: 135px;
+  background-color: #3b5998;
+}
+
+.social-media_twitter {
+  bottom: 90px;
+  background-color: #00aced;
+}
+
+.social-media_github {
+  bottom: 45px;
+  background-color: #333;
+}
+
+.social-media_linkedin {
+  bottom: 0;
+  background-color: #007bb6;
+}
+
+/* MEDIA QUERY -- TABLET */
+@media (min-width: 400px) and (max-width: 1024px) {
+  body {
+    padding: 5px;
+  }
+  .pf_grid {
+    height: 100%;
+    grid-gap: 5px;
+    -ms-grid-columns: 0px 1fr 1fr 0px;
+        grid-template-columns: 0px 1fr 1fr 0px;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: ". part01 part02 ." ". part03 part04 ." ". part05 part06 .";
+  }
+}
+
+/* MEDIA QUERY -- DESKTOP */
+@media (min-width: 1024px) {
+  .pf_grid {
+    height: 100%;
+    grid-gap: 0px 1px;
+    -ms-grid-columns: 5px 1fr 1fr 1fr 5px;
+        grid-template-columns: 5px 1fr 1fr 1fr 5px;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: ". part01 part02 part03." ". part04 part05 part06.";
+  }
+}
+/*# sourceMappingURL=style.css.map */

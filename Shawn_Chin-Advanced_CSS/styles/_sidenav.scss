@@ -1,0 +1,56 @@
+/* -------- PART 03 - SOCIAL MEDIA ------------ */
+
+.sidenav{
+
+    &_link{
+        position: fixed;
+        width: 230px;
+        right: -185px;   
+    
+        font-family: 'Alata';
+        font-size: 14px;
+        color: white;
+    
+        margin-bottom: 5%;
+        margin-right: 5px;
+    
+        padding: 12px;
+        line-height: 21px;
+    
+        transition: 0.4s ease;
+        
+        &:hover{
+            right: -20px;
+            color: white;
+            } 
+    } 
+
+     &_img{
+        height: 20px;
+        width: 40px;
+        padding-left: 1px;
+        padding-right: $padding20;
+        vertical-align: middle;
+    }
+}
+
+.social-media_blog {
+    bottom: 180px;
+    background-color: #e17b77;
+}
+.social-media_facebook {
+    bottom: 135px;
+    background-color: #3b5998;
+}
+.social-media_twitter {
+    bottom: 90px;
+    background-color: #00aced;
+}
+.social-media_github {
+    bottom: 45px;
+    background-color: #333;
+}
+.social-media_linkedin {
+    bottom: 0;
+    background-color: #007bb6;
+}
