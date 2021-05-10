@@ -1,0 +1,134 @@
+$fontfam01: 'Open Sans';
+$fontfam02: 'Merriweather', serif;
+$padding20: 20px;
+$defcol_black: black;
+
+@mixin FlexCenter{
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+html{
+    margin-top: 20px;
+}
+
+body {   
+    font-family: $fontfam01;
+    background-color: #c3cfe2;
+    padding: 0;    
+}
+
+h1 {
+    font-family: $fontfam02;
+    font-size: 50px;
+    font: bold;
+    color:rgb(119, 119, 119);
+}
+h2 {
+    font-family: $fontfam02;
+    font-size: 30px;
+    color:rgb(71, 71, 71); 
+}
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 35px;
+    color: white;
+
+    background-color:  #686de0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h4{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    background-color:  #686de0;
+    padding: 10px;
+}
+h1, h2, h3, h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+picture{
+    @include FlexCenter();
+    transform: translate(0, 50%);
+}
+
+.over-flow{
+    overflow-x: hidden;
+}
+
+.height{
+    height: 250px;
+}
+
+.height2{
+    height: 50px;
+}
+
+.margin{
+    padding-left: $padding20;
+    padding-right: $padding20;
+}
+
+.flex-container {
+    margin-top: 50px;
+    @include FlexCenter();
+    flex-wrap:wrap;
+}
+
+.h3{
+    padding-top: 75px;
+}
+
+
+@import 'testimonial';
+
+@import 'portfolio';
+
+@import 'sidenav';
+
+
+
+
+/* MEDIA QUERY -- TABLET */
+@media (min-width: 400px) and (max-width: 1024px){
+
+    body{
+        padding: 5px;
+    }
+    
+    .pf_grid{
+      height: 100%;
+      grid-gap: 5px;
+
+      grid-template-columns: 0px 1fr 1fr 0px;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+      ". part01 part02 ."
+      ". part03 part04 ."
+      ". part05 part06 .";
+    }
+}
+
+/* MEDIA QUERY -- DESKTOP */
+@media (min-width: 1024px) {
+
+    .pf_grid{
+      height: 100%;
+      grid-gap: 0px 1px;
+
+      grid-template-columns: 5px 1fr 1fr 1fr 5px;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+      ". part01 part02 part03."
+      ". part04 part05 part06.";
+    }
+}
